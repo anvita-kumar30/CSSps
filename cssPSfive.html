@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 5</title>
+    <style>
+        /* html{
+            font-size: 45px;
+        } */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            height: 60px;
+        }
+
+        header nav ul li {
+            display: inline;
+        }
+
+        ul {
+            padding: 16px;
+        }
+
+        .container {
+            /* font-size: 34px; */
+            background-color: rgb(215, 245, 213);
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .box {
+            /* font-size: 12px; */
+            /* font-size: 3em; w.r.t the parent font size*/
+            /* font-size: 3rem; w.r.t the html font size*/
+            background-color: pink;
+        }
+
+        .box2 {
+            background-color: aqua;
+            /* width: 334px; */
+            width: 50vw;  /*viewport width*/
+            height: 50vh; /*viewport height*/
+            margin: auto;
+            text-align: center;
+            z-index: 4; 
+        }
+
+        .box2 p {
+            border: 2px solid red;
+        }
+
+        .box2in {
+            background-color: rgb(38, 85, 85);
+            width: 20vw;
+            height: 20vh;
+            position: relative;
+            /* position: static; */
+            /* position: absolute; */
+            /* position: fixed; */
+            /* position: sticky; */
+            top: 50px;
+            bottom: 50px;
+            left: 250px;
+            right: 50px;
+            z-index: 2;  /*to place an element on top of something*/
+        }
+
+        .box3 {
+            width: 344px;
+            height: 4vh;  /*will ignore this*/
+            background-color: rgb(140, 158, 174);
+            min-height: 50vh;
+            min-width: none;
+            max-height: none;
+            max-width: none;
+        }
+        ul li{
+            background-color: rgb(94, 74, 74);
+            list-style: square inside url("black-dot.jpg");
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>HOME</li>
+                <li>ABOUT</li>
+                <li>CONTACT</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <p>This is a paragraph</p>
+        <div class="box">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero voluptate quisquam modi!
+        </div>
+        <div class="box2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis consequatur officia quas!</p>
+            <div class="box2in">
+                I am a box
+            </div>
+        </div>
+        <div class="box3">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt.
+        </div>
+    </div>
+    <ul>
+        <li>Apple</li>
+        <li>Oranges</li>
+        <li>Grapes</li>
+    </ul>
+</body>
+</html>
