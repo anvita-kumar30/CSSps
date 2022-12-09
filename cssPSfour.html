@@ -5,25 +5,104 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chapter 4</title>
+    <!--to import any font copy the link and font family from google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=La+Belle+Aurore&display=swap" rel="stylesheet">
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .navbar{
+            height: 70px;
+            background-color: black;
+            color: white;
+        }
+        .navbar ul li a{
+            color: white;
+            text-decoration: none;  /*underlines or links are removed*/
+        }
+        .navbar ul li{
+            color: white;
+            text-decoration: none;  
+            display: inline-block;
+            margin: 25px 14px;
+            font-size: 20px;
+        }
+        .left{
+            height: 60vh;
+            background-color: rgb(237, 118, 118);
+            display: inline-block;
+            height: 90vh;
+            width: 50%;
+        }
+        .right{
+            height: 60vh;
+            background-color: rgb(95, 219, 95);
+            display: inline-block;
+            height: 90vh;
+            width: 50%;
+        }
         .box1{
             width: 431px;
-            height: 1134px;
+            height: 534px;
             background-color: pink;
-            display: inline;
+            display: inline;   /*takes only space req by element(not allowed)*/
+            /*display: block;    takes full available in width and newline*/
+            /*display: inline-block; similar to inline but setting h,w,m,p is allowed*/
+            /*display: none;  deleted*/
+            /*display: hidden; space is reserved*/
         }
         .box2{
             width: 431px;
-            height: 1134px;
+            height: 534px;
             background-color: green;
-            display: inline;   /*takes only space req by element*/
-            display: block;    /*takes full available in width*/
-            display: inline-block; /*similar to inline but setting h,w,m,p is allowed*/
+            display: block;
+            text-align: center;  /*for block level element*/
+            text-decoration: underline;  /*only use for links*/
+            text-transform: uppercase;
+            line-height: 35px;  /*space between lines*/
+            font-size: 23px;
+            /*font-family: 'Courier New', Courier, monospace;*/
+            font-family: 'La Belle Aurore', cursive;
+            font-style: oblique;
+            font-weight: 100;  
+            font-variant: small-caps;
+        }
+        footer{
+            font-family: 'Baloo Bhai 2', cursive;
+            background-color: black;
+            color: white;
+            padding: 10px;
+            text-transform: uppercase;
+        }
+        .center{
+            text-align: center;
         }
     </style>
 </head>
 <body>
+    <div class="navbar">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </div>
+    <div class="left">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolorem commodi perspiciatis!
+    </div><div class="right">  <!--for width to be 50+50 i.e. accurate, don't leave spaces-->
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti voluptatum et exercitationem.
+    </div>
     <div class="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, laboriosam illo.</div>
-    <div class="box2">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+    <div class="box2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur eveniet non modi delectus. Excepturi laborum optio aperiam id placeat dolorum saepe eaque ex.</div>
+    <footer>
+        <p class="center">Baloo bhai 2 font &copy;</p>
+    </footer>
 </body>
 </html>
