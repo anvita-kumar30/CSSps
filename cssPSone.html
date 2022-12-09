@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 1</title>
+    <link rel="stylesheet" href="style.css">  <!--external-->
+    <style>       /*using style tag*/
+        .red{
+            background-color: red;
+            color: white;
+        }
+        #head{
+            background-color: red;
+        }
+        .one{
+            background-color: black;
+            color: aliceblue;
+        }
+        .blue{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="red">Background color of red and text color is white</div>
+    <div id="head" style="background-color: red">   <!--inline-->
+        Head
+    </div>
+    <div class="one">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore itaque obcaecati eum repellat fugit optio facilis, necessitatibus cum aut consequatur voluptate id nihil laborum totam incidunt reiciendis ratione. Vel, dolor.
+    </div>
+    <div class="red blue">Background color of red and text color is blue(overwritten)</div>
+    <span class="red">
+        Hi
+    </span>
+</body>
+</html>

@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*one*/
+#head{
+    background-color: red;
+}
+/*two*/
+ul{
+    background-color: rgb(9, 4, 60);
+    color: white;
+}
+.main{
+    background-color: rgb(74, 4, 4);
+    width: 462px;
+}
+.r{
+    width: 530px;
+    height: 1530px;
+    background-color: rgb(130, 75, 176);
+    /*height: 100px; */
+    color: rgb(28, 28, 21);
+    border: 2px solid red;
+    background-image: url('sparkles.jpg');
+    background-repeat: no-repeat;
+    background-size: 241px 541px;
+    /*background-position: center top;*/
+    background-attachment: fixed;
+    /*background: red url('sparkles.jpg') no-repeat scroll right top;*/
+}
+/* body{
+    background-image: url("sparkles.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
