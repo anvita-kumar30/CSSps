@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 6</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background-color: black;
+            color: white;
+        }
+        ul{
+            padding: 30px;
+        }
+        li{
+            list-style: none;
+            display: inline;
+            padding: 0 30px;
+        }
+        /*parent*/
+        .container{ 
+            background-color: aquamarine;
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            /* justify-content: center;  horizontally */
+            /* align-items: center; vertically */
+            /* align-content: center; */
+        }
+        /*child*/
+        .left{
+            height: 80vh;
+            width: 40vw;
+            float: left;
+            background-color: rgb(130, 70, 70);
+        }
+        .right{
+            height: 80vh;
+            width: 40vw;
+            float: right;
+            background-color: rgb(168, 168, 220);
+        }
+        .box1 {
+            height: 234px;
+            /* width: 345px; */
+            background-color: rgb(143, 143, 221);
+            border: 2px solid black;
+            /* float: left; */
+            order: 4;
+            /* align-self: flex-end; */
+            flex-grow: 2;
+        }
+
+        .box2 {
+            height: 234px;
+            /* width: 345px; */
+            background-color: rgb(241, 144, 144);
+            border: 2px solid black;
+            /* float: right; */
+            /* clear: right; */
+            /* clear: left; */
+            /* clear: both; */
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>HOME</li>
+                <li>ABOUT</li>
+                <li>CONTACT</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="left">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci et sed perspiciatis, exercitationem sint sapiente, vero quod, excepturi impedit alias tenetur magnam!</div>
+        <div class="right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit delectus numquam dignissimos!</div>
+        <div class="box1">Box 1</div>
+        <div class="box2">Box 2</div>
+        <div class="box2">Box 3</div>
+        <div class="box2">Box 4</div>
+    </div>
+</body>
+
+</html>
